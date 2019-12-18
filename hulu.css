@@ -118,22 +118,14 @@ a:hover { color: #FFFFFF}
 
 .Masthead__container {
 
-background: url(1600-lifestyle-background@2x_1.jpg) no-repeat center center;
--webkit-background-size: cover;
+background: url('1600-lifestyle-background@2x_1.jpg') no-repeat center;
+/* -webkit-background-size: cover;
 -moz-backbground-size: cover;
 -o-background-size: cover;
-background-size: cover;
-
-/*
-    background: url(1600-lifestyle-background@2x_1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-backbground-size: cover;
-    -o-background-size: cover;
+background-size: cover; */
+  
     background-size: cover;
-  */
-  
-  
-   
+
     position: relative;
     
     color: #FFFFFF;
@@ -146,6 +138,12 @@ background-size: cover;
     padding-left: 0px;
     margin: 0px;
     
+}
+@media (max-width: 620px) {
+    .Masthead__container {
+        height: 800px;
+        background: url('320-lifestyle@2x.jpg') no-repeat left;
+    }
 }
 
 #main_content {
